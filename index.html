@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahayu</title>
+    <link rel="stylesheet" href="css_webfood.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="album/logo,rahayu.png">
+</head>
+<body>
+    <!-------------------------------Header---------------------------- -->
+    <!-- --destop view -->
+    <div id="container"
+    class="container">
+        <div id="menu">
+            <div class="brand-logo">
+                <img src="album/logo,rahayu.png" alt="">
+            </div>
+            <div class="menu-items">
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Your Order</a>
+                <a href="#">Wishlist</a>   
+                <a href="#">Address</a>
+                <a href="#">Help</a>
+            </div>
+        </div>
+        <div id="food-container">
+            <div id="header">
+                <div class="add-box">
+                    <i class="fa fa-map-marker your-address" 
+                    id="add-address">Your Address</i>
+                </div>
+                <div class="util">
+                    <i class="fa fa-search"> Search</i>
+                    <i class="fa fa-tags"> Offers</i>
+                    <i class="fa fa-cart-plus" id="cart-plus">0 Items</i>
+                </div>
+            </div>
+            <div id="food-items" >
+                <!----------------------soup-------------------->
+                <div id="soup">
+                    <p id="category-name">Soup</p>
+                </div>
+                <!----------------------fired-------------------->
+                <div id="fried">
+                    <p id="category-name">Fried</p>
+                </div>
+                <!----------------------curry and snack-------------------->
+                <div id="curry">
+                    <p id="category-name">Curry and Snack</p>
+                </div>
+            </div>
+            <div id="cart-page" class="cart-toggle">
+                <p id="cart-title">Cart Items</p>
+                <p id="m-total-amount">Total Amount : 100$</p> 
+                <table>
+                    <thead>
+                        <td>Item</td>
+                        <td>Name</td>
+                        <td>Quantity</td>
+                        <td>Price</td>
+                    </thead>
+                    <tbody id="table-body">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="cart">
+            <div class="taste-header">
+                <div class="user">
+                    <i class="fa fa-user-circle">
+                        Account
+                    </i>
+                </div>
+            </div>
+            <div id="category-list">
+                <p class="item-menu">Go For hunt</p>
+                <div class="border"></div>
+
+            </div>
+            <div id="checkout"class="cart-toggle">
+                <p id="total-item">Totle Item : 5</p>
+                <p id="total-price">Total Price : $50</p>
+                <p id="delivery">Free Delivery Above 2$</p>
+                <button class="cart-btn">Checkout</button>
+            </div>
+        </div>
+    </div>
+    <!-- mobile view -->
+    <div id="mobileview" class="mobile-view">
+        <div class="mobile-top">
+            <div class="logo-box">
+                <img src="album/logo,rahayu.png" alt="logo">
+                <i class="fa fa-map-marker your-address" id="m-add-address"> Your Address</i>
+            </div>
+            <div class="top-menu">
+                <i class="fa fa-search"></i>
+                <i class="fa fa-tags"></i>
+                <i class="fa fa-heart-o"></i>
+                <i class="fa fa-cart-plus" id="cart-plus">0</i>
+            </div>
+        </div>
+        <div class="item-container">
+            <div class="category-header" id="category-header">
+                
+            </div>
+        </div>
+        <div class="mobile-footer">
+            <a href="#">Home</a>
+            <a href="#">Cart</a>
+            <a href="#">Offers</a>
+            <a href="#">Orders</a>
+        </div>
+    </div>
+    <!--javascript file-->
+    <script src="index.js" type="module"></script>
+</body>
+</html>
